@@ -62,9 +62,9 @@ def test_add_movie():
 def test_create_user():
     url = "http://localhost:8000/users/"
     user_data = {
-                    "email": "janedoe@gmail.com",
-                    "password": "ABC123"
-                }
+    "email": "janedoe@gmail.com",
+    "password": "ABC123"
+    }
     response = requests.post(url, json=user_data)
     assert response.status_code == 200
     assert response.json()["email"] == "janedoe@gmail.com"
@@ -73,4 +73,5 @@ def test_create_user():
     response = requests.post(url, json=user_data)
     assert response.status_code == 400
     assert response.json()["detail"] == "Email already registered"
+
 
