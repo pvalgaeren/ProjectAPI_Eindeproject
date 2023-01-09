@@ -146,6 +146,12 @@ I got the information about writing this movie api from the course "API developm
 
 ![image](https://user-images.githubusercontent.com/91118410/211341157-350afc1d-357a-4c59-ba32-4835383f9cad.png)
 
+### DELETE
+
+/movies/{movies_id}:
+![image](https://user-images.githubusercontent.com/91118410/211344932-217de834-c21e-4a32-88dd-c7b68f4fa4ad.png)
+
+
 
 ## Frontend
 ![image](https://user-images.githubusercontent.com/91118410/211167590-af8c15bb-8e91-428a-ad24-94cbdf795bad.png)
