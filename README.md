@@ -67,7 +67,7 @@ I got the information about writing this movie api from the course "API developm
 ![image](https://user-images.githubusercontent.com/91118410/211193084-dba833ec-6a2a-4ca1-8470-e5e2eb53a745.png)
 
 
-## OpenAI docs
+## OpenAPI docs
 ### GET
 /movies:
 
@@ -79,10 +79,9 @@ I got the information about writing this movie api from the course "API developm
 ![image](https://user-images.githubusercontent.com/91118410/211191439-7527e690-8db1-44ea-8e07-a776e7e03885.png)
 ![image](https://user-images.githubusercontent.com/91118410/211191458-c0cff774-5f94-43df-91b9-e61b34d8fb44.png)
 
-/movies/search:
+/users/me:
 
-![image](https://user-images.githubusercontent.com/91118410/211198745-2cedf05b-b632-44ba-a87a-a48d1cd54dc6.png)
-![image](https://user-images.githubusercontent.com/91118410/211198760-1f09d9de-af8c-4c9f-a58f-5ad2619758c9.png)
+![image](https://user-images.githubusercontent.com/91118410/211342095-a54da415-a1ae-4525-b100-fb8916910d22.png)
 
 
 ### POST
