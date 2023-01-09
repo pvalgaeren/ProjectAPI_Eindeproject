@@ -6,3 +6,6 @@ services:
       - "8000:8000"
     volumes:
       - sqlite_my_volume:/code/sqlitedb
+
+volumes:
+  sqlite_my_volume:
