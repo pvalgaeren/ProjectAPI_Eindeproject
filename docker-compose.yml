@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  system-service:
+    image: paulinevalgaeren/python-db-pauline
+    ports:
+      - "8000:8000"
+    volumes:
+      - sqlite_my_volume:/code/sqlitedb
