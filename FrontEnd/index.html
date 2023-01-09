@@ -1,0 +1,95 @@
+<!-- HTML for the front-end -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Movie API</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <!-- Form to make a POST request to the /token endpoint to get a JWT -->
+    <form id="login-form" method="POST" action="/token">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Form to make a POST request to the /movies/{title} endpoint to add a new movie -->
+    <form id="add-movie-form" method="POST" action="/movies/{title}">
+      <h3>What movie would you like to add to the database?</h3>
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title"><br><br>
+      <label for="type">Genre:</label><br>
+      <input type="text" id="type" name="genre"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Form to make a GET request to the /movies/{movie_id} endpoint to get a movie by id -->
+    <form id="get-movie-form" method="GET" action="/movies/{movie_id}">
+      <h3>What id number do you want to search on for a fillm?</h3>
+      <label for="movie-id">Movie ID:</label><br>
+      <input type="text" id="movie-id" name="movie-id"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Form to make a GET request to the /movies endpoint to get a list of all movies -->
+    <form id="get-all-movies-form" method="GET" action="/movies">
+      <h3>Print the entire movie list with this button.</h3>
+      <label for="all">Get all movies</label>
+      <input type="submit" id="all" value="Submit">
+    </form>
+
+    <!-- Form to make a GET request to the /movies/search endpoint to search for movies by genre -->
+    <form id="search-movies-form" method="GET" action="/movies/search">
+      <h3>Find a movie in the genre you like yourself.</h3>
+      <label for="genre">Genre:</label><br>
+      <input type="text" id="genre" name="genre"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+<!-- JavaScript for the front-end -->
+<script>
+  // Add event listeners to the forms to make the requests when the forms are submitted
+  document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const request = new XMLHttpRequest();
+    request.open('POST', '/token');
+    request.send(formData);
+  });
+
+  document.getElementById('add-movie-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const request = new XMLHttpRequest();
+    request.open('POST', '/movies/' + formData.get('title'));
+    request.send(formData);
+  });
+
+  document.getElementById('get-movie-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const request = new XMLHttpRequest();
+    request.open('GET', '/movies/' + formData.get('movie-id'));
+    request.send();
+  });
+
+  document.getElementById('get-all-movies-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const request = new XMLHttpRequest();
+    request.open('GET', '/movies');
+    request.send();
+  });
+
+  document.getElementById('search-movies-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const request = new XMLHttpRequest();
+    request.open('GET', '/movies/search?genre=' + formData.get('genre'));
+    request.send();
+  });
+</script>
