@@ -143,5 +143,12 @@ I got the information about writing this movie api from the course "API developm
 
 ![image](https://user-images.githubusercontent.com/91118410/211214719-75fc6783-d1b7-4375-9b42-d632c676a2f0.png)
 
+## Frontend
+![image](https://user-images.githubusercontent.com/91118410/211167590-af8c15bb-8e91-428a-ad24-94cbdf795bad.png)
+![image](https://user-images.githubusercontent.com/91118410/211167601-b1e12662-1d56-47c6-b6b5-f5dd5e8c292b.png)
+![image](https://user-images.githubusercontent.com/91118410/211167616-e09ffb2a-3924-49b4-905b-fef17e0ed14b.png)
+![image](https://user-images.githubusercontent.com/91118410/211167633-08819e3b-538b-4cf9-8977-aa74daa5f899.png)
+![image](https://user-images.githubusercontent.com/91118410/211167624-9b0796f9-13ce-432d-9e22-330dce0290a9.png)
+
 ## Links
 Okteto: https://github.com/pvalgaeren/ProjectAPI_Eindeproject.git
