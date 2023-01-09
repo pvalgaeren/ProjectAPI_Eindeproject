@@ -75,3 +75,9 @@ def test_create_user():
     assert response.json()["detail"] == "Email already registered"
 
 
+# DELETE
+def test_delete_movie_not_found():
+    url = f"http://localhost:8000/movies/{2}"
+    response = requests.delete(url)
+    assert response.status_code == 404
+
