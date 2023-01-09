@@ -143,6 +143,11 @@ I got the information about writing this movie api from the course "API developm
 
 ![image](https://user-images.githubusercontent.com/91118410/211214719-75fc6783-d1b7-4375-9b42-d632c676a2f0.png)
 
+/users/:
+
+![image](https://user-images.githubusercontent.com/91118410/211341157-350afc1d-357a-4c59-ba32-4835383f9cad.png)
+
+
 ## Frontend
 ![image](https://user-images.githubusercontent.com/91118410/211167590-af8c15bb-8e91-428a-ad24-94cbdf795bad.png)
 ![image](https://user-images.githubusercontent.com/91118410/211167601-b1e12662-1d56-47c6-b6b5-f5dd5e8c292b.png)
