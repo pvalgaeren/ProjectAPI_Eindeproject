@@ -42,6 +42,7 @@ I got the information about writing this movie api from the course "API developm
 ![image](https://user-images.githubusercontent.com/91118410/211193027-c2fa014d-1e36-42ad-ab35-9ef876ed1203.png)
 
 /users/me:
+
 ![image](https://user-images.githubusercontent.com/91118410/211207345-cb685fb7-686a-4a05-b76d-b2a192ae9d63.png)
 
 
